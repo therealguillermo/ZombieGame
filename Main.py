@@ -4,7 +4,6 @@ import random
 from game import Game
 from player import Player
 from player import Bullet
-from enemies import fastZombie
 
 
 win = pygame.display.set_mode((1600,900 ))
