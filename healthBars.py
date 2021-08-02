@@ -26,14 +26,14 @@ class enemyHealthBar(object):
 
 	def drawHealthBar(self, win, centerx, top, enemyHealth):
 		currHealth = enemyHealth
-		self.healthBar.center = (centerx, top + 20)
-		self.healthBar.left = centerx - 25
-		self.healthBarRed.center = (centerx, top + 20)
-		self.healthBarRed.right = centerx + 25
 		if self.lastHealth != currHealth:
 			change = (1 / (self.hits + 1)) * 50
 			self.healthBarRed.width += change + 1
 			self.healthBar.width -= change
+		self.healthBar.center = (centerx, top + 20)
+		self.healthBar.left = centerx - 25
+		self.healthBarRed.center = (centerx, top + 20)
+		self.healthBarRed.right = centerx + 25
 		self.lastHealth = currHealth
 		pygame.draw.rect(win, (0, 255, 0), self.healthBar)
 		pygame.draw.rect(win, (255, 0, 0), self.healthBarRed)

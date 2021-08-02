@@ -4,7 +4,7 @@ from enemies import fastZombie
 from enemies import zombie
 from enemies import bigZombie
 from healthBars import healthBar
-random.seed()
+random.seed(5)
 
 def cf():
 	return random.randrange(2)
