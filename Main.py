@@ -79,16 +79,6 @@ while running:
 		enemy.healthBar.drawHealthBar(win, enemy.centerx, enemy.rect.top, enemy.health)
 
 
-
-
-
-
-
-
-
-
-
-
 	pygame.display.update()        
 
 #########################
